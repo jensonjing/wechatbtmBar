@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view wx:if="{{changeIndex==0}}" class="container">
+  首页
+</view>
+<view wx:if="{{changeIndex==1}}" class="container">
+  行业社区
+</view>
+<view wx:if="{{changeIndex==2}}" class="container">
+  发现
+</view>
+<view wx:if="{{changeIndex==3}}" class="container">
+  项目对接
+</view>
+<view wx:if="{{changeIndex==4}}" class="container">
+  我的
+</view>
+<tabBar dataList="{{list}}" activeIdx="{{changeIndex}}" bind:tapItem="getTab"></tabBar>

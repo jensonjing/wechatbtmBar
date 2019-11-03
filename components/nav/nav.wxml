@@ -1,0 +1,10 @@
+<view class="navBar">
+    <view class="tabbar_item" wx:for="{{dataList}}" wx:key="{{index}}" bindtap="handleItemTap" data-idx="{{index}}">
+        <view class="tabItem_icon">
+            <image class="" src="{{activeIdx===index?item.selectedIconPath:item.iconPath}}"></image>
+        </view>
+        <view class="tabItem_text {{activeIdx===index?'active':''}}">
+            {{item.text}}
+        </view>
+    </view>
+</view>
